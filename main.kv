@@ -47,7 +47,7 @@ MDFloatLayout:
 
         MDRaisedButton: 
             text: "SAVE"            
-            on_release: app.add_task(task_textfield)
+            on_release: app.add_task(task_textfield), app.save_task_to_file(task_textfield, date_text), app.close_dialog()
          
         MDFlatButton: 
             text: "CANCEL"
